@@ -318,3 +318,161 @@ h2{
 .call-to-action a:hover {
     text-decoration: underline;
 }
+
+/* To-do list */
+
+.todo-container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	align-items: center;
+	margin: auto;
+	padding: 20px;
+	border-radius: 12px;
+	background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+
+.todo-task-buttons {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.todo-task-separator {
+	flex: 1;
+	border-left: 1px solid #ddd; 
+	height: 20px; 
+	margin: 0 10px;
+}
+
+.todo-header-input {
+	margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+  
+.todo-status {
+	font-size: 1.1rem;
+	color: #555;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.todo-header {
+	margin-bottom: 20px;
+	color: #333;
+	font-size: 2rem;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	outline: none;
+	transition: border-color 0.3s;
+}
+
+.todo-input:focus {
+	border-color: #007bff;
+}
+
+.todo-add-button {
+	padding: 12px 20px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.todo-add-button:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+
+.todo-list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	flex: 1;
+}
+
+.todo-task-list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 90%;
+	padding: 0;
+	margin: 0;
+}
+
+.todo-task-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	margin-bottom: 10px;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.todo-task-done {
+	text-decoration: line-through;
+	color: #888;
+	background-color: #f1f1f1;
+}
+
+.todo-task-item:hover {
+	background-color: #f9f9f9;
+	transform: scale(1.02);
+}
+
+.todo-task-toggle {
+	background: none;
+	border: none;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: underline;
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+.todo-task-toggle:focus {
+	outline: 2px solid #007bff; 
+}
+
+.todo-remove-button {
+	padding: 6px 12px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #dc3545;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.todo-remove-button:hover {
+	background-color: #c82333;
+	transform: scale(1.1);
+}
