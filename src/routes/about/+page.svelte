@@ -1,26 +1,30 @@
 <svelte:head>
 	<title>About</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="About this demo app" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>About this app</h1>
+	<h1>About this demo application</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		This application has been made by Sergio Truébano Robles. Its purpose is to serve as an example of a SvelteKit application using the most basic and useful features of Svelte.
+	</p>
+
+	<p>
+		<a href="https://kit.svelte.dev/">SvelteKit</a> is a framework for building web applications of all sizes, with a great developer experience and a focus on performance. It allows you to write less code and achieve better results, thanks to its innovative approach to building user interfaces.
+	</p>
+
+	<p>
+		You can make your own SvelteKit app by typing the following into your command line and following the prompts:
 	</p>
 
 	<pre>npm create svelte@latest</pre>
 
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+		This page is a purely static HTML page, meaning it requires no client-side interactivity. Because of this, we don't need to load any JavaScript, resulting in faster load times and better performance. Try viewing the page's source code or opening the devtools network panel and reloading to see the difference.
 	</p>
 
 	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
+		The <a href="/sverdle">Sverdle</a> page showcases SvelteKit's data loading and form handling capabilities. You can even try using it with JavaScript disabled to see how it performs!
 	</p>
 </div>
