@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import linkedin from '$lib/images/linkedin.svg';
 </script>
 
 <header>
@@ -12,9 +13,25 @@
 	</div>
 
 	<nav>
+
+		<svg viewBox="0 0 100 100"aria-hidden="true" style="width: 48px; height: 48px;">
+			<path d="M100,100 C70,90 30,50 0,0 L100,0 Z"/>
+		</svg>
+
+		<!--
+		Izquierda:
+
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
+		
+		Derecha:
+
+		<svg viewBox="0 0 2 3" aria-hidden="true">
+			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
+		</svg>
+		-->
+
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
@@ -26,15 +43,22 @@
 				<a href="/sverdle">Sverdle</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
+		
+		<svg viewBox="0 0 100 100" aria-hidden="true" style="width: 48px; height: 48px;">
+			<path d="M0,100 C30,90 70,50 100,0 L0,0 Z"/>
 		</svg>
+		
+		
 	</nav>
 
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
+	<div class="right-corner">
+		<a href="https://github.com/sergio-tr">
+			<img src={github} alt="Personal GitHub" />
 		</a>
+		<a href="https://linkedin.com/in/sergiotr74/">
+			<img src={linkedin} alt="Personal Linkedin" />
+		</a>
+		
 	</div>
 </header>
 
@@ -42,6 +66,32 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.right-corner img {
+		width: 2em;
+		height: 2em;
+		object-fit: contain;
+	}
+
+	.right-corner {
+		width: 4em;
+		height: 2em;
+		display: flex;
+	}
+
+	.right-corner a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.corner img {
+		width: 2em;
+		height: 2em;
+		object-fit: contain;
 	}
 
 	.corner {
