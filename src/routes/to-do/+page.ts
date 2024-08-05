@@ -1,5 +1,5 @@
 // Import types for SvelteKit
-import type { PageServerLoad } from './$types';
+import type { Load } from '@sveltejs/kit';
 
 // Define the structure of the task data
 interface Task {
@@ -8,7 +8,7 @@ interface Task {
 }
 
 // Define the server load function that SvelteKit will call when the page loads
-export const load: PageServerLoad = async () => {
+export const load: Load = async () => {
   // Simulate fetching data from an API or database
   const initialTasks: Task[] = [
     { text: 'Learn SvelteKit', done: false },
