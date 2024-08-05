@@ -17,43 +17,19 @@
 				<img src={welcome_fallback} alt="Welcome" />
 			</picture>
 		</span>
-
-		to your new<br />SvelteKit app
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
 
+	<h2> Here is a counter representing various Svelte features</h2>
+
+	<p class="description">
+		This counter component below is a simple example to demonstrate Svelte's reactivity. Click the buttons to increase or decrease the count and see how Svelte efficiently updates the DOM dynamically.
+	</p>
+	
 	<Counter />
+
+	<p class="call-to-action">
+		Want to learn more? Check out the official <a href="https://svelte.dev" target="_blank">Svelte documentation</a> for tutorials and guides.
+	</p>
+	
 </section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
